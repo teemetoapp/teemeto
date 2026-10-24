@@ -1,0 +1,50 @@
+name: teemeto
+
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: teemeto_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-teemeto_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-teemeto_pass}
+      POSTGRES_DB: ${POSTGRES_DB:-teemeto_db}
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U teemeto_user -d teemeto_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - teemeto_network
+
+  redis:
+    image: redis:7-alpine
+    container_name: teemeto_redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    networks:
+      - teemeto_network
+
+volumes:
+  postgres_data:
+    name: teemeto_postgres_data
+  redis_data:
+    name: teemeto_redis_data
+
+networks:
+  teemeto_network:
+    name: teemeto_network
+    driver: bridge
