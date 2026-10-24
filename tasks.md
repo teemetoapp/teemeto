@@ -20,7 +20,7 @@
 
 ---
 
-### [ ] Task 0.2: پکیج مشترک و ایزولاسیون همزمانی RLS (`packages/shared`)
+### [x] Task 0.2: پکیج مشترک و ایزولاسیون همزمانی RLS (`packages/shared`)
 - **توضیحات:** راه‌اندازی پکیج پایتون `packages/shared`، راه‌اندازی کلاینت Async SQLAlchemy به همراه Middleware یا Session Context Manager جهت اجرای اجباری `SET LOCAL app.tenant_id = :tenant_id` در ابتدای هر تراکنش، و اسکریپت مایگریشن تست با `FORCE ROW LEVEL SECURITY`.
 - **معیار پذیرش:**
   - هیچ کوئری نباید بدون ست شدن متغیر تراکنش اجرا شود.
