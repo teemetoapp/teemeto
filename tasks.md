@@ -10,7 +10,7 @@
 ## 📌 فاز ۰: اسپایک امکان‌سنجی فنی (Feasibility Spike)
 **هدف:** اعتبارسنجی و رفع کلیه ریسک‌های فنی هسته سیستم قبل از پیاده‌سازی نهایی.
 
-### [ ] Task 0.1: زیرساخت مونوریپو و Docker Compose توسعه محلی
+### [x] Task 0.1: زیرساخت مونوریپو و Docker Compose توسعه محلی
 - **توضیحات:** راه‌اندازی فایل `infra/docker-compose.yml` شامل کانتینر PostgreSQL با اکستنشن `pgvector`، کانتینر Redis، و تنظیم Makefile با دستورات اصلی (`make dev`, `make test`, `make lint`).
 - **معیار پذیرش:**
   - دستور `docker compose up -d` بدون خطا اجرا شود.
