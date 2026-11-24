@@ -1,4 +1,4 @@
-# TEEMETO Core — Intelligent Multi-Agent Workflow Engine for SMEs
+# Teemeto Core — Intelligent Multi-Agent Workflow Engine for SMEs
 
 [![Python Version](https://img.shields.io/badge/python-3.11+-blue.svg)](https://python.org)
 [![Architecture](https://img.shields.io/badge/architecture-Multi--Tenant%20SaaS-green.svg)](#architecture)
@@ -6,7 +6,7 @@
 [![Vector Database](https://img.shields.io/badge/vector%20db-PostgreSQL%20%2F%20pgvector-blue.svg)](#data-layer)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](LICENSE)
 
-**TEEMETO** is a next-generation, multi-tenant AI automation platform designed to empower small and medium-sized enterprises (SMEs) and modern creator businesses. By combining deterministic workflow orchestration with specialized Large Language Model (LLM) agents, TEEMETO bridges the gap between chaotic customer touchpoints and structured business execution.
+**Teemeto** is a next-generation, multi-tenant AI automation platform designed to empower small and medium-sized enterprises (SMEs) and modern creator businesses. By combining deterministic workflow orchestration with specialized Large Language Model (LLM) agents, Teemeto bridges the gap between chaotic customer touchpoints and structured business execution.
 
 ---
 
@@ -82,7 +82,7 @@ Configure your database connection strings, vector dimension parameters, and mod
 
 ## 👨‍💻 Author & Contact
 
-Developed and maintained by **Alireza Hosseini** & the TEEMETO team.
+Developed and maintained by **Alireza Hosseini** & the Teemeto team.
 - **LinkedIn:** [Alireza Hosseini](https://www.linkedin.com/in/alireza-hosseini-43012624b)
-- **Organization:** [TEEMETO](https://github.com/teemetoapp)
+- **Organization:** [Teemeto](https://github.com/teemetoapp)
 - **Inquiries:** `teemeto.app@gmail.com`
